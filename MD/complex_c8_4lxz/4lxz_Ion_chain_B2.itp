@@ -1,0 +1,35 @@
+;
+;	File '4lxz_Ion_chain_B2.itp' was generated
+;	By user: evelyn (501)
+;	On host: AppledeMacintosh.local
+;	At date: Sat Jan  9 16:40:16 2016
+;
+;	This is a include topology file
+;
+;	Created by:
+;	GROMACS:      gmx pdb2gmx, VERSION 5.0.6
+;	Executable:   /usr/local/bin/../Cellar/gromacs/5.0.6/bin/gmx
+;	Library dir:  /usr/local/bin/../Cellar/gromacs/5.0.6/share/gromacs/top
+;	Command line:
+;	  gmx pdb2gmx -f 4lxz_fix_chain_b.pdb -o 4lxz.gro -p 4lxz.top -i 4lxz.itp -water spc
+;	Force field was read from the standard Gromacs share directory.
+;
+
+[ moleculetype ]
+; Name            nrexcl
+Ion_chain_B2        3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue 401 ZN  rtp ZN   q +2.0
+     1       ZN2+    401     ZN     ZN      1          2      65.37   ; qtot 2
+; residue 402 CA  rtp CA   q +2.0
+     2       CA2+    402     CA     CA      2          2      40.08   ; qtot 4
+; residue 403 NA  rtp NA   q +1.0
+     3        NA+    403     NA     NA      3          1    22.9898   ; qtot 5
+
+; Include Position restraint file
+#ifdef POSRES
+#include "4lxz_Ion_chain_B2_pr.itp"
+#endif
+
