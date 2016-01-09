@@ -1,0 +1,20 @@
+;
+;	File '1t64.top' was generated
+;	By user: huei (502)
+;	On host: xiaoyideMacBook-Pro.local
+;	At date: Sat Jan  9 15:22:45 2016
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	GROMACS:      gmx pdb2gmx, VERSION 5.0.6
+;	Executable:   /usr/local/bin/../Cellar/gromacs/5.0.6/bin/gmx
+;	Library dir:  /usr/local/bin/../Cellar/gromacs/5.0.6/share/gromacs/top
+;	Command line:
+;	  gmx pdb2gmx -f 1t64_fix_chain_a.pdb -o 1t64.gro -p 1t64.top -water spc
+;	Force field was read from the standard Gromacs share directory.
+;
+
+; Include forcefield parameters
+#include "gromos43a1.ff/forcefield.itp"
+
