@@ -23,7 +23,7 @@ DRG      3
      1       CH1     1  DRG     CAC     1    0.027  14.0270   
      2       CH1     1  DRG     CAF     1    0.027  14.0270   
      3       CH1     1  DRG     CAK     1    0.092  13.0190   
-     4     SDMSO     1  DRG     SAS     1    2.125  32.0600   
+     4     SDmso     1  DRG     SAS     1    2.125  32.0600   
      5        OM     1  DRG     OAP     1   -0.896  15.9994   
      6        OM     1  DRG     OAQ     1   -0.897  15.9994   
      7        NL     1  DRG     NAW     1    0.609  14.0067   

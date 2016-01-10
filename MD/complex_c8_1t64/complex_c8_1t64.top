@@ -25,6 +25,11 @@
 ; Include ligand topology
 #include "c8_1t64_docking.itp"
 
+; Ligand position restraints
+#ifdef POSRES
+#include "posre_drg.itp"
+#endif
+
 ; Include water topology
 #include "gromos43a1.ff/spc.itp"
 
@@ -40,10 +45,12 @@
 
 [ system ]
 ; Name
-HISTONE DEACETYLASE 8
+HISTONE DEACETYLASE 8 in water
 
 [ molecules ]
 ; Compound        #mols
 Protein_chain_A     1
 Ion_chain_A2        1
 DRG                 1
+SOL         11171
+CL               3

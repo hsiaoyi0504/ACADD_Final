@@ -1,0 +1,39 @@
+;
+;	File '1t64_Ion_chain_A2.itp' was generated
+;	By user: evelyn (501)
+;	On host: AppledeMacintosh.local
+;	At date: Sat Jan  9 16:38:58 2016
+;
+;	This is a include topology file
+;
+;	Created by:
+;	GROMACS:      gmx pdb2gmx, VERSION 5.0.6
+;	Executable:   /usr/local/bin/../Cellar/gromacs/5.0.6/bin/gmx
+;	Library dir:  /usr/local/bin/../Cellar/gromacs/5.0.6/share/gromacs/top
+;	Command line:
+;	  gmx pdb2gmx -f 1t64_fix_chain_a.pdb -o 1t64.gro -p 1t64.top -i 1t64.itp
+;	Force field was read from the standard Gromacs share directory.
+;
+
+[ moleculetype ]
+; Name            nrexcl
+Ion_chain_A2        3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue 388 ZN  rtp ZN   q +2.0
+     1       ZN2+    388     ZN     ZN      1          2      65.37   ; qtot 2
+; residue 389 CA  rtp CA   q +2.0
+     2       CA2+    389     CA     CA      2          2      40.08   ; qtot 4
+; residue 390 CA  rtp CA   q +2.0
+     3       CA2+    390     CA     CA      3          2      40.08   ; qtot 6
+; residue 391 NA  rtp NA   q +1.0
+     4        NA+    391     NA     NA      4          1    22.9898   ; qtot 7
+; residue 392 NA  rtp NA   q +1.0
+     5        NA+    392     NA     NA      5          1    22.9898   ; qtot 8
+
+; Include Position restraint file
+#ifdef POSRES
+#include "1t64_Ion_chain_A2_pr.itp"
+#endif
+
