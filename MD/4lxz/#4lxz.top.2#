@@ -1,0 +1,46 @@
+;
+;	File '4lxz.top' was generated
+;	By user: evelyn (501)
+;	On host: AppledeMacintosh.local
+;	At date: Sat Jan  9 16:40:15 2016
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	GROMACS:      gmx pdb2gmx, VERSION 5.0.6
+;	Executable:   /usr/local/bin/../Cellar/gromacs/5.0.6/bin/gmx
+;	Library dir:  /usr/local/bin/../Cellar/gromacs/5.0.6/share/gromacs/top
+;	Command line:
+;	  gmx pdb2gmx -f 4lxz_fix_chain_b.pdb -o 4lxz.gro -p 4lxz.top -i 4lxz.itp -water spc
+;	Force field was read from the standard Gromacs share directory.
+;
+
+; Include forcefield parameters
+#include "gromos43a1.ff/forcefield.itp"
+
+; Include chain topologies
+#include "4lxz_Protein_chain_B.itp"
+#include "4lxz_Ion_chain_B2.itp"
+
+; Include water topology
+#include "gromos43a1.ff/spc.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "gromos43a1.ff/ions.itp"
+
+[ system ]
+; Name
+HISTONE DEACETYLASE 2 in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_B     1
+Ion_chain_B2        1
+SOL             10685

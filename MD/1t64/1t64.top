@@ -37,9 +37,11 @@
 
 [ system ]
 ; Name
-HISTONE DEACETYLASE 8
+HISTONE DEACETYLASE 8 in water
 
 [ molecules ]
 ; Compound        #mols
 Protein_chain_A     1
 Ion_chain_A2        1
+SOL         11188
+CL               1

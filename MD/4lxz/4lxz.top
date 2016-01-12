@@ -37,9 +37,11 @@
 
 [ system ]
 ; Name
-HISTONE DEACETYLASE 2
+HISTONE DEACETYLASE 2 in water
 
 [ molecules ]
 ; Compound        #mols
 Protein_chain_B     1
 Ion_chain_B2        1
+SOL         10680
+CL               5
