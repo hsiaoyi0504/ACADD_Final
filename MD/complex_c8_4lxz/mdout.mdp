@@ -1,8 +1,9 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: evelyn (501)
-;	On host: AppledeMacintosh.local
-;	At date: Sun Jan 10 15:45:43 2016
+;	By user: hsiao (1000)
+;	On host: hsiao-BM6875-BM6675-BP6375
+;	At date: Sun Jan 10 18:34:38 2016
+
 ;
 
 ; VARIOUS PREPROCESSING OPTIONS
@@ -248,7 +249,6 @@ wall-density             =
 wall-ewald-zfac          = 3
 
 ; COM PULLING          
-; Pull type: no, umbrella, constraint or constant-force
 pull                     = no
 
 ; ENFORCED ROTATION    
